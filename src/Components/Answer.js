@@ -1,7 +1,13 @@
 import React from "react";
+import dataSet from "../api/dataSet";
 
-const Answer = () => {
-  return <div>This is Answer</div>;
+const Answer = ({ answer }) => {
+  return (
+    <div>
+      {/* answer buttons */}
+      <button>{answer}</button>
+    </div>
+  );
 };
 
 export default Answer;

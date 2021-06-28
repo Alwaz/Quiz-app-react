@@ -5,7 +5,7 @@ import Incorrect from "./Incorrect";
 const ScoreArea = () => {
   return (
     <div>
-      This is Score Area
+      <h1>Score Area</h1>
       <Correct />
       <Incorrect />
     </div>
