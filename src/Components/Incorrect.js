@@ -1,7 +1,11 @@
 import React from "react";
 
-const Incorrect = () => {
-  return <div>Incorrect</div>;
+const Incorrect = ({ incorrect }) => {
+  return (
+    <div>
+      <p>Total Incorrect: {incorrect}</p>
+    </div>
+  );
 };
 
 export default Incorrect;

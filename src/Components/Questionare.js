@@ -16,7 +16,7 @@ const Questionare = () => {
       This is Questionare
       {console.log(dataSet)}
       <QuizArea isFinished={isFinished} dataSet={dataSet[current]} />
-      <ScoreArea />
+      <ScoreArea correct={correct} incorrect={incorrect} />
     </div>
   );
 };
