@@ -11,7 +11,7 @@ const Questionare = () => {
   const [incorrect, setIncorrect] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
-  //   functions to increment score when choosing correct answer
+  //   function to handle score on correct choices
   const handleClick = (choice) => {
     if (choice == dataSet[current].correct) {
       setCorrect(isCorrect + 1);
