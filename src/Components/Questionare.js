@@ -1,22 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import QuizArea from "./QuizArea";
 import ScoreArea from "./ScoreArea";
 import dataSet from "../api/dataSet";
 
 const Questionare = () => {
   // define states
-  const [current, setCurrent] = useState(1);
-  const [dataSet, setDataSet] = useState([]);
+  const [current, setCurrent] = useState(0);
+  let { question, options } = dataSet;
   const [correct, setCorrect] = useState(0);
   const [incorrect, setIncorrect] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
-  console.log(dataSet[current]);
-
   return (
     <div>
       This is Questionare
-      <QuizArea isFinished dataSet={dataSet[current]} />
+      {console.log(dataSet)}
+      <QuizArea isFinished={isFinished} dataSet={dataSet[current]} />
       <ScoreArea />
     </div>
   );

@@ -1,9 +1,11 @@
-// import React, { useState } from "react";
-// import dataSet from "../api/dataSet";
+import React, { useState } from "react";
 
-// const Questions = () => {
-//   const [dataSet, setDataSet] = useState([]);
-//   return <>{<h1>{dataSet[0].question}</h1>}</>;
-// };
+const Questions = (props) => {
+  return (
+    <div>
+      <h1>{props.dataSet.question}</h1>
+    </div>
+  );
+};
 
-// export default Questions;
+export default Questions;
