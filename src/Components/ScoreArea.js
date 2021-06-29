@@ -2,11 +2,11 @@ import React from "react";
 import Correct from "./Correct";
 import Incorrect from "./Incorrect";
 
-const ScoreArea = ({ correct, incorrect }) => {
+const ScoreArea = ({ isCorrect, incorrect }) => {
   return (
     <div>
       <h1>Score Area</h1>
-      <Correct correct={correct} />
+      <Correct isCorrect={isCorrect} />
       <Incorrect incorrect={incorrect} />
     </div>
   );

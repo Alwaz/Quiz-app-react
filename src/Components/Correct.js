@@ -1,9 +1,9 @@
 import React from "react";
 
-const Correct = ({ correct }) => {
+const Correct = ({ isCorrect }) => {
   return (
     <div>
-      <p>Total Correct: {correct}</p>
+      <p>Total Correct: {isCorrect}</p>
     </div>
   );
 };
