@@ -1,10 +1,16 @@
 import React from "react";
 import Answer from "./Answer";
 
-const AnswerList = ({ dataSet }) => {
+const AnswerList = ({ dataSet, handleClick }) => {
   const options = [];
   for (let i = 0; i < dataSet.options.length; i++) {
-    options.push(<Answer choice={i} answer={dataSet.options[i]} />);
+    options.push(
+      <Answer
+        choice={i}
+        handleClick={handleClick}
+        answer={dataSet.options[i]}
+      />
+    );
   }
   return <div>{options}</div>;
 };
