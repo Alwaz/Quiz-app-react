@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Questions from "./Questions";
 import AnswerList from "./AnswerList";
 import UserGreetings from "./UserGreetings";
 
 const QuizArea = ({ isFinished, dataSet }) => {
-  //   const [isFinished, setIsFinished] = useState(false);
-  //   const [current, setCurrent] = useState(0);
-
   if (isFinished) {
     return <UserGreetings />;
   }
@@ -14,9 +11,8 @@ const QuizArea = ({ isFinished, dataSet }) => {
   return (
     <div>
       This is Quiz Area
-      {/* {console.log(dataSet)} */}
       <Questions dataSet={dataSet} />
-      {/* <AnswerList dataSet={props.dataSet} /> */}
+      <AnswerList dataSet={dataSet} />
     </div>
   );
 };

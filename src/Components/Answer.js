@@ -1,5 +1,4 @@
 import React from "react";
-import dataSet from "../api/dataSet";
 
 const Answer = ({ answer }) => {
   return (
